@@ -1,0 +1,11 @@
+
+State Machine - |router_top|router_fsm:fsm|present_state
+Name present_state.load_after_full present_state.fifo_full_state present_state.load_parity present_state.load_data present_state.load_first_data present_state.wait_till_empty present_state.decode_address present_state.check_parity_error 
+present_state.decode_address 0 0 0 0 0 0 0 0 
+present_state.wait_till_empty 0 0 0 0 0 1 1 0 
+present_state.load_first_data 0 0 0 0 1 0 1 0 
+present_state.load_data 0 0 0 1 0 0 1 0 
+present_state.load_parity 0 0 1 0 0 0 1 0 
+present_state.fifo_full_state 0 1 0 0 0 0 1 0 
+present_state.load_after_full 1 0 0 0 0 0 1 0 
+present_state.check_parity_error 0 0 0 0 0 0 1 1 
